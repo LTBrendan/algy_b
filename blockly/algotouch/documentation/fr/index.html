@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "fr" ng-app = "routeApp">
+<head>
+    <link type="text/css" rel="stylesheet" href="semantic/semantic.min.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src = "js/angular.min.js"></script>
+    <script src = "js/angular-route.min.js"></script>
+    <script src = "js/routeApp.js"></script>
+    <script src = "js/app.js"></script>
+    <title>AlgoTouch - Fr</title>
+</head>
+
+<body>
+<nav>
+
+</nav>
+
+<div class="ui stackable grid">
+    <div class="four wide column">
+        <div class="ui large inverted vertical menu top attached">
+            <div class="item">
+                <div class="menu">
+                    <a class="item" onclick="if(typeof switcher !== 'undefined')switcher.openBlockly()">Retour a AlgoTouch</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ui small search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Rechercher">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="menu">
+                    <a class="item" href="#/home">Accueil</a>
+                    <a class="item" href="#/manual">Manuel d'utilisation</a>
+                    <a class="item" href="#/about">A Propos</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Variables</div>
+                <div class="menu">
+                    <a class="item" href="#/arrays">Tableaux</a>
+                    <a class="item" href="#/values">Valeurs</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Tableaux</div>
+                <div class="menu">
+                    <a class="item" href="#/length">Taille</a>
+                    <a class="item" href="#/getset">Valeur de|Mettre a</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Valeurs</div>
+                <div class="menu">
+                    <a class="item" href="#/integer">Nombre</a>
+                    <a class="item" href="#/char">Caractere</a>
+                    <a class="item" href="#/read">Lire message</a>
+                    <a class="item" href="#/write">Ecrire message</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Maths</div>
+                <div class="menu">
+                    <a class="item" href="#/maths">Operations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Logique</div>
+                <div class="menu">
+                    <a class="item" href="#/if">Si...Alors...Sinon</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Macro</div>
+                <div class="menu">
+                    <a class="item" href="#/new">Nouvelle macro</a>
+                    <a class="item" href="#/call">Appel macro</a>
+                    <a class="item" href="#/cond">Condition</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ten wide column" ng-view>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blockly AlgoTouch</title>
+
+<link rel="stylesheet" href="./styles.css">
+
+
+
+<script src="../blockly-master/blockly_compressed.js"></script>
+<script src="../blockly-master/msg/messages.js"></script>
+<script src="../blockly-master/blocks_compressed.js"></script>
+
+<script src="blockly/core/core.js"></script>
+<script src="blockly/msg/msg.js"></script>
+<script src="blockly/core/field_macro.js"></script>
+<script src="blockly/core/field_array.js"></script>
+
+<script src="blockly/blocks/variables.js"></script>
+<script src="blockly/blocks/variables_create.js"></script>
+<script src="blockly/blocks/arrays.js"></script>
+<script src="blockly/blocks/operations.js"></script>
+<script src="blockly/blocks/logic.js"></script>
+<script src="blockly/blocks/macro.js"></script>
+<script src="blockly/blocks/values.js"></script>
+
+<script src="blockly/generator/algotouch.js"></script>
+<script src="blockly/generator/values.js"></script>
+<script src="blockly/generator/variables.js"></script>
+<script src="blockly/generator/arrays.js"></script>
+<script src="blockly/generator/logic.js"></script>
+<script src="blockly/generator/operations.js"></script>
+<script src="blockly/generator/macro.js"></script>
+
+<script src="blockly/test/test_suite.js"></script>
+<script src="blockly/test/test_values.js"></script>
+<script src="blockly/test/test_variables.js"></script>
+<script src="blockly/test/test_arrays.js"></script>
+<script src="blockly/test/test_logic.js"></script>
+<script src="blockly/test/test_operations.js"></script>
+<script src="blockly/test/test_macro.js"></script>
+
+<script src="loader.js"></script>
+
+</head>
+<body>
+	<table width="100%" height="100%">
+		<tr class="workspace">
+
+			<td class="farside" height="1em">
+				<button type="button" id="doc" title="Documentation" onclick="openDoc()"><img src='icons/doc.png' class="icon"></button>
+				<button type="button" id="text" title="Exporter au format texte" onclick="exportTxt()"><img src='icons/pencil.png' class="icon"></button>
+				<button type="button" id="save" title="Sauvegarder" onclick="exportWorkspace()"><img src='icons/save.png' class="icon"></button>
+				<button type="button" id="load" title="Ouvrir" onclick="loadWorkspace()"><img src='icons/load.png' class="icon"></button>
+				<button type="button" id="run" title="Exécuter" onclick="play()"><img src='icons/play.png' class="icon"></button>
+				<button type="button" id="stop" title="Stop" onclick="interrupt()"><img src='icons/stop.png' class="icon"></button>
+				<button type="button" id="params" title="Paramètres d'exécution" onclick="showParams()"><img src='icons/parameters.png' class="icon"></button>
+			<select id="languageMenu"></select>
+			</td>
+		</tr>
+
+		<tr>
+			<td height="100%" colspan="2" id="content_area"></td>
+		</tr>
+
+	</table>
+
+	<div id="content_blocks" class="content"></div>
+
+	<xml id="toolbox" style="display: none">
+
+		<category name="@Msg.LOGIC_CATEGORY" colour="@Logic.HUE">
+			<block type="if_block"></block>
+			<!-- <block type="logic_comparisons"></block> -->
+		</category>
+		<category name="@Msg.MATHS_CATEGORY" colour="@Ops.HUE">
+			<block type="operations">
+				<value name="A">
+					<shadow type="integer">
+					 <field name="VALUE">1</field>
+					</shadow>
+				</value>
+				<value name="B">
+					<shadow type="integer">
+						<field name="VALUE">1</field>
+					</shadow>
+				</value>
+			</block>
+		</category>
+		<category name="@Msg.VALUES_CATEGORY" colour="@Values.HUE">
+			<block type="char"></block>
+			<block type="integer"></block>
+			<block type="read"></block>
+			<block type="write"></block>
+		</category>
+		<category name="@Msg.ARRAYS_CATEGORY" colour="@Arrays.HUE">
+			<block type="length_of"></block>
+			<block type="get_set_int_array">
+				<value name="INDEX">
+					<shadow type="integer"></shadow>
+				</value>
+			</block>
+		</category>
+
+		<sep></sep>
+
+		<category name="@Msg.VARIABLES_CATEGORY" colour="@Variables.HUE" custom="ALGOTOUCH_VARIABLE"></category>
+
+		<sep></sep>
+
+		<category name="@Msg.MACRO_CATEGORY" colour="@Macro.HUE">
+			<block type="macro"></block>
+			<block type="macro_cond"></block>
+			<block type="execute"></block>
+			<block type="get_macro"></block>
+		</category>
+	</xml>
+
+	<script src="start.js"> </script>
+
+
+</body>
+</html>

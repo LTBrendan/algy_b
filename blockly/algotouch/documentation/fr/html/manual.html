@@ -1,0 +1,218 @@
+<script src= "js/app.js"></script>
+
+<section class="about">
+
+    <h1 class="ui center aligned block header">
+        <div class="center aligned">
+            <div class="content">
+                Manuel d'utilisation
+            </div>
+        </div>
+    </h1>
+
+
+    <div class="ui styled fluid accordion">
+
+
+        <div class="active title">
+            <i class="dropdown icon"></i>
+            Bien démarrer avec AlgoTouch
+        </div>
+        <div class="active content">
+            <p>Vous trouverez dans les sections ci-dessous un manuel vous permettant d'appréhender au mieux les fonctionnalités du logiciel.</p>
+        </div>
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Démarrage du logiciel
+        </div>
+        <div class="content">
+            <p>Lorsque vous lancez AlgoTouch, une fenêtre similaire à celle-ci devrait apparaitre (au terme du chargement).</p>
+            <img class="ui centered large image" src="assets/manual/start.png">
+            <p>Divisons cette fenêtre en différentes parties :</p>
+            <div class="ui accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Menu des blocs
+                </div>
+                <div class="content">
+                    <img class="ui rounded bordered right floated small image" src="assets/manual/menuBlock.png">
+                    <p>Vous trouverez dans le menu des blocs l'ensemble des blocs disponibles pour la
+                        création de vos programmes. Ils sont triés par catégories :
+                    </p>
+                    <ul>
+                        <li>Logique</li>
+                        <li>Maths</li>
+                        <li>Valeurs</li>
+                        <li>Tableaux</li>
+                        <li>Variables</li>
+                        <li>Macros</li>
+                    </ul>
+                    <p>Vous trouverez dans cette documentation des détails blocs par blocs (accessible via le menu situé sur le côté gauche
+                        ce cette page.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Espace de travail (grille)
+                </div>
+                <div class="content">
+                    <img class="ui rounded bordered right floated small image" src="assets/manual/workspace.png">
+                    <p>L'espace de travail (ou workspace en anglais), est l'endroit où vous allez créer vos programmes.</p>
+                    <br>
+                    <p>Il fonctionne par "drag & drop" (glisser - déposer). En effet, il suffit de trouver le bloc qu'il vous
+                        faut à partir du menu des blocs, de le glisser jusqu'à l'endroit voulu sur le workspace et de le lâcher. Pour supprimer
+                        un bloc, il faut le glisser jusque l'icône "poubelle" située en bas à droite de l'espace de travail.</p>
+                    <br>
+                    <p>Vous pouvez voir aussi que l'on trouve des icones sur cet espace de travail (en bas à droite).
+                        Ils servent à zoomer et dézoomer sur vos blocs, vous permettant de gérer ce que vous voulez voir.
+                        L'icône corbeille permet de supprimer un bloc. La dernière icone permet de se recentrer sur le programme.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Barre d'outils
+                </div>
+                <div class="content">
+                    <img class="ui rounded bordered right floated small image" src="assets/manual/toolbar.png">
+                    <p>La barre d'outils vous donne accès à de nombreuses actions :</p>
+                    <ul>
+                        <li><strong>Documentation</strong> : La première icone vous permet d'accéder sur la documentation</li>
+                        <li><strong>Exporter au format texte</strong> : Cette icône permet d'exporter le programme dans
+                        un format texte, en pseudo code.</li>
+                        <li><strong>Sauvegarder</strong> : Vous pouvez sauvegarder vos programmes afin de les modifier ultérieurement.</li>
+                        <li><strong>Ouvrir</strong> : Vous permet d'ouvrir un programme que vous avez sauvegardé.</li>
+                        <li><strong>Play</strong> : Lancer l'exécution du programme que vous avez écrit.</li>
+                        <li><strong>Langue</strong> : permet de changer la langue de l'interface (français / anglais). Il faut savoir que la langue du logiciel au lancement
+                        est paramétrée en fonction de la langue du système d'exploitation (par défaut : français).</li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Suivi des variables
+                </div>
+                <div class="content">
+                    <img class="ui rounded bordered right floated small image" src="assets/manual/variable.png">
+                    <p>Cet espace vous permet de visualiser les variables que vous avez créé, leur nom ainsi que leur valeur.
+                    	Vous trouverez dans cet espace deux tableaux distincts avec différentes colonnes :</p>
+                    <ul>
+                    	<li>
+                    		<p><strong>Tableaux</strong> : Ce tableau affiche les différents tableaux que vous avez créé.
+                    		IL comporte plusieurs colonnes :</p>
+                    		<ul>
+                    			<li><strong>Nom</strong> : Le nom de la variable (se met &agrave; jour si la variable est renommée)</li>
+                    			<li><strong>Indices</strong> : L'indice de la valeur dans le tableau</li>
+                    			<li><strong>Val courante</strong> : La valeur courante des cases du tableau après exécution</li>
+                    		</ul>
+                    		<p>Par défaut le tableau est réduit &agrave; [...] mais en cliquant dessus, vous pouvez en visualiser le contenu et inversement.</p>
+                    	</li>
+                    	<li>
+                    		<p><strong>Variables</strong> : Ce tableau affiche les différentes variables que vous avez créées.
+                    		IL comporte plusieurs colonnes :</p>
+                    		<ul>
+                    			<li><strong>Nom</strong> : Le nom de la variable (se met &agrave; jour si la variable est renommée)</li>
+                    			<li><strong>Initialisation</strong> : La valeur de la variable au début du programme</li>
+                    			<li><strong>Val courante</strong> : La valeur courante de la variable après exécution</li>
+                    		</ul>
+                    	</li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Bloc macro "main"
+                </div>
+                <div class="content">
+                    <img class="ui rounded bordered right floated small image" src="assets/manual/macroMain.png">
+                    <p>C'est le bloc principal de tout programme. Il ne peut pas être supprimé, et il sera appelé par défaut lors de l'exécution.</p>
+                    <br>
+                    <p>Cependant son exécution peut être "évitée", en sélectionnant sur une autre macro avant de lancer l'exécution.</p>
+                    <br>
+                    <p>Vous retrouverez toute la documentation concernant ce bloc sur pas page correspondant aux <a href="#/new">macros</a>.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+           Création d'un programme
+        </div>
+        <div class="content">
+            <p>L'application utilise le principe de "drag & drop" pour fonctionner. Il suffit donc de glisser les blocs depuis le menu des blocs jusqu'au workspace.</p>
+        </div>
+
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Exécution
+        </div>
+        <div class="content">
+            <img class="ui rounded bordered right floated tiny image" src="assets/manual/play.png">
+            <p>Pour exécuter un programme écrit sur AlgoTouch, il suffit de cliquer sur le bouton "play" (dans la barre d'outils). C'est alors la macro <i>main</i> qui sera
+            lancée par défaut. Pour lancer seulement une partie du programme, il suffit de sélectionner la macro avant de lancer l'exécution.</p><br>
+        </div>
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Sauvegarde
+        </div>
+        <div class="content">
+            <img class="ui rounded bordered right floated tiny image" src="assets/manual/save.png">
+            <p>Une fois que vous avez créé votre programme, vous pouvez le sauvegarder, afin de le terminer plus tard, ou le transmettre à une autre personne
+                qui utilise AlgoTouch. La sauvegarde se fait dans un type de fichier spécifique à AlgoTouch. Il est basé sur du xml, mais est modifié. Il est impossible de l'ouvrir
+             avec un autre logiciel.</p><br>
+        </div>
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Charger un programme
+        </div>
+        <div class="content">
+            <img class="ui rounded bordered right floated tiny image" src="assets/manual/load.png">
+            <p>Tout comme la sauvegarde, il est donc possible de charger un programme qui à été précédemment sauvegarder. Le type de fichier doit être le même que le celui de sauvegarde.
+            Si le fichier est modifié, il se peut que le chargement ne fonctionne pas.</p>
+            <br>
+            <p>Lors du chargement d'un fichier, tous les blocs sont restaurés (même emplacement dans le programme. Le panneau de suivi des variables est lui aussi
+                mis à jour lors du chargement.</p>
+        </div>
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Changer la langue
+        </div>
+        <div class="content">
+            <img class="ui rounded bordered right floated small image" src="assets/manual/lang.png">
+            <p>Pour le moment, seulement deux langues sont disponibles pour le logiciel AlgoTouch :</p>
+            <ul>
+                <li>Français</li>
+                <li>Anglais</li>
+            </ul>
+            <p>Lors du lancement de l'application, celle-ci récupère la langue du système s'adapte à celle-ci. Si la langue n'est pas supportée, le français sera mis par défaut.</p>
+        </div>
+
+
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Comment savoir s'il y a un erreur dans l'exécution du programme ?
+        </div>
+        <div class="content">
+            <img class="ui rounded bordered right floated medium image" src="assets/manual/error.png">
+            <p>Si le programme comporte une erreur, celle-ci sera récupérée lors de la compilation ou de l'exécution, puis affichée sous forme de popup.</p>
+            <br>
+            <p>Le message d'erreur est simplifié afin de ne garder que l'essentiel (et non toute la <i>StackTrace</i> de java).</p>
+        </div>
+
+
+
+    </div>
+
+</section>
